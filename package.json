@@ -40,6 +40,7 @@
     "ember-source": "~3.2.0",
     "ember-welcome-page": "^3.0.0",
     "eslint-plugin-ember": "^5.0.0",
+    "gulp-less-glob": "^1.0.0",
     "loader.js": "^4.2.3",
     "qunit-dom": "^0.6.2",
     "semantic-ui-calendar": "^0.0.8",
