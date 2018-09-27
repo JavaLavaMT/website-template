@@ -2,12 +2,13 @@ import Component from '@ember/component';
 import $ from 'jquery';
 
 export default Component.extend({
-  actions:{
-  call () {
-    $('.ui.dropdown')
-    .dropdown({
-    action: 'select'
-  });
-}
-}
+
+  actions: {
+    call() {
+      $('.ui.dropdown')
+        .dropdown({
+          action: 'select'
+        });
+    }
+  }
 });
