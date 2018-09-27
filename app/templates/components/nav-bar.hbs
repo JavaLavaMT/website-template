@@ -1,0 +1,28 @@
+<div class="menu">
+  <div class="item item_home">
+    {{#link-to 'index' class="black"}}
+      <i class="home icon">Home</i>
+    {{/link-to}}
+  </div>
+  <div class="item item_contact">
+    {{#link-to 'contact' class="black"}}
+      <i class="address card icon">Contact</i>
+    {{/link-to}}
+  </div>
+  <div class="item item_about">
+    <div class="ui dropdown">
+  <div {{action "call"}} class="black">About</div>
+  <i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="item">
+      {{#link-to 'about'}}
+        About us
+      {{/link-to}}
+    </div>
+    <div class="item">
+      Facts
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
