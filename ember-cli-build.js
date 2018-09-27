@@ -3,11 +3,12 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
-  let app = new EmberApp(defaults, {
-    lessOptions:{
+  var app = new EmberApp(defaults, {
+    lessOptions: {
       paths: [
         'node_modules/semantic-ui-less'
-      ]
+      ],
+      plugins: [ require('less-plugin-glob') ]
     }
     // Add options here
   });
