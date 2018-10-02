@@ -1,37 +1,21 @@
-{{!-- <div class="menu">
-  <div class="item item_home">
-    {{#link-to 'index' class="black"}}
-      <i class="home icon">Home</i>
+<div class="nav_menu">
+    {{#link-to 'index' class="item"}}
+      <i class="home icon size"></i> Home
     {{/link-to}}
-  </div>
-  <div class="item item_contact">
-    {{#link-to 'contact' class="black"}}
-      <i class="address card icon">Contact</i>
+    {{#link-to 'contact' class="item"}}
+      <i class="address card icon size"></i> Contact
     {{/link-to}}
-  </div>
-  <div class="item item_about">
-    <div class="ui dropdown">
-      <div {{action "call"}} class="black">About</div>
-      <i class="dropdown icon"></i>
-      <div class="menu">
-        <div class="item">
-          {{#link-to 'about'}}
-            About us
-          {{/link-to}}
-        </div>
-        <div class="item">
-          Facts
-        </div>
-      </div>
+  <div class='item'>
+      {{#ui-dropdown}}
+    About <i class="dropdown icon size"></i>
+    <div class="menu">
+      {{#link-to 'about'}}
+      <p class="item size">About </p>
+      {{/link-to}}
+      <div class="item">Facts</div>
+      <div class="item">Customer reviews</div>
     </div>
-  </div>
-</div> --}}
+{{/ui-dropdown}}
+</div>
 
-<div class="dropdown">
-  <div {{action 'myFunction'}} class="dropbtn">About</div>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
 </div>

@@ -6,6 +6,14 @@ export default Component.extend({
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
   actions:{
+    move () {
+      console.log(this);
+      this.get('router').transitionTo('about');
+       // transitionTo('about');
+    },
+
+
+
   myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
   }
